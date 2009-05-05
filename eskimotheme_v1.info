@@ -14,5 +14,7 @@ features[] = comment_user_picture
 features[] = search
 features[] = logo
 
-stylesheets[screen] = blueprint/screen.css
-stylesheets[print] = blueprint/print.css
+stylesheets[all][] = style/blueprint.css
+stylesheets[screen][] = style/style.css
+stylesheets[screen][] = blueprint/screen.css
+stylesheets[print][] = blueprint/print.css

@@ -8,6 +8,10 @@
   <?php print $meta; ?>
   <?php print $head; ?>
   <?php print $styles; ?>
+  <?php print $scripts;?>
+  <link rel="stylesheet" href="/inuitsbeta/sites/all/themes/eskimo1/style/style.css" type="text/css" media="screen, projection">
+  <link rel="stylesheet" href="/inuitsbeta/sites/all/themes/eskimo1/style/blueprint.css" type="text/css" media="screen, projection">
+  
   <!--[if lte IE 7]>
     <link rel="stylesheet" href="<?php print $path; ?>blueprint/ie.css" type="text/css" media="screen, projection">
     <link href="<?php print $path; ?>css/ie.css" rel="stylesheet"  type="text/css"  media="screen, projection" />
@@ -17,13 +21,13 @@
   <![endif]-->  
 </head>
 <body class="<?php print $body_classes;?>">
-<div class="container">
+<div class="container showgrid">
     <div id="header" class="span-24 last">
       <div class="span-4">
       <br />
       </div>
       <div class="span-19" id="logo">
-        <div class="border">
+        <div class="borderlogo">
           <h1 id="logo">
             <a title="<?php print $site_name; ?><?php if ($site_slogan != '') print ' &ndash; '. $site_slogan; ?>" href="<?php print url(); ?>"><?php print $site_name; ?><?php if ($site_slogan != '') print ' &ndash; '. $site_slogan; ?></a>
           </h1>          
@@ -61,7 +65,7 @@
     </div>
     </div>
     <div class="span-14" id="content">
-      <div class="border">
+      <div class="bordercontent">
         <?php
       if ($breadcrumb != '') {
         print $breadcrumb;
@@ -86,8 +90,10 @@
     ?>
       </div>
     </div>
-    <div class="span-6 last">
+    <div class="span-6 last ">
+    <div class="bordermenu">
       <?php print $right; ?>
+    </div>
     </div>
 
 </body>

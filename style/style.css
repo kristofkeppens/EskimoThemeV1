@@ -1,0 +1,127 @@
+#header {
+	margin-top: 20px;
+	height: 150px;
+
+	}
+
+#logo {
+	float:left;
+	height: 150px;
+
+}
+
+#nav {
+	width: 150px;
+	list-style-type: none;
+}
+
+ul {
+	list-style: none;
+	}
+
+#nav li {
+	list-style-image:none;
+	}
+	
+#nav li a{
+	width: 150px;
+	display: block;
+	height: 45px;
+	background: url(http://localhost/inuitstest/images/menu.jpg) no-repeat scroll 0 0;
+	text-indent: -9999px;
+	list-style:none;
+	}
+
+#nav li a#news:active,
+#nav li a#news:hover,
+#nav li a#news:focus {
+	background-position: -150px 0;
+	}
+	
+#nav li a#vision {
+	background-position: 0 -45px;
+	}
+#nav li a#vision:active,
+#nav li a#vision:hover,
+#nav li a#vision:focus {
+	background-position: -150px -45px;
+}
+#nav li a#believers {
+	background-position: 0 -90px;
+	}
+#nav li a#believers:active,
+#nav li a#believers:hover,
+#nav li a#believers:focus {
+	background-position: -150px -90px;
+	}
+#nav li a#people {
+	background-position: 0 -135px;	
+}
+#nav li a#people:active,
+#nav li a#people:hover,
+#nav li a#people:focus {
+	background-position: -150px -135px;
+	}
+#nav li a#people{
+	background-position: 0 -180px;
+	}
+#nav li a#jobs:active,
+#nav li a#jobs:hover,
+#nav li a#jobs:focus {
+	background-position: -150px -180px;
+	}
+#nav li a#contact {
+	background-position: 0 -225px;
+	}
+#nav li a#contact:active,
+#nav li a#contact:hover,
+#nav li a#contact:focus {
+	background-position: -150px -225px;
+	}
+#nav li a#planet {
+	background-position: 0 -270px;
+	}
+#nav li a#planet:active,
+#nav li a#planet:hover,
+#nav li a#planet:focus {
+	background-position: -150px -270px;
+	}
+#nav li a#benefits {
+	background-position: 0 -315px;
+	}
+#nav li a#benefits:active,
+#nav li a#benefits:hover,
+#nav li a#benefits:focus {
+	background-position: -150px -315px;
+	}
+
+#content {
+	padding-bottom: 18px;
+
+
+}
+
+.borderlogo {
+	padding-left: 30px;
+ 	border-left-style: solid;
+	border-left-width: 10px;
+	border-left-color: #336F70;
+	height: 150px;
+}
+
+.bordercontent {
+	padding-left: 30px;
+ 	border-left-style: solid;
+	border-left-width: 10px;
+	border-left-color: #336F70;
+}
+
+.bordermenu {
+	padding-left: 5px;
+	border-left: solid 1px #C6DACB;
+	
+	}
+
+#content .border {
+	height: 360px;
+}
