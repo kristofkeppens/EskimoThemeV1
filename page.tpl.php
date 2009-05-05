@@ -69,6 +69,7 @@
     </ul>
     </div>
     </div>
+
     <div class="span-14" id="content">
       <div class="bordercontent">
         <?php
@@ -99,17 +100,21 @@
       <?php print $right; ?>
     </div>
     </div>
-    <div class="clear"></div>
-        <div class="span-24 last">
-      <div id="footer-border">
-        <div id="copyright">
-          Copyright - 2009 -<strong> Inuits.be</strong>
-        </div>
-        <div id="secondary-links">
-          <?php print theme('links', $secondary_links);?>
-        </div>
-      </div>
+    <div class="clear"></div>     
+
+       
     </div>
+    <div class="container">
+      <div class="span-24 footer-border last">
+
+          <div id="copyright">
+            Copyright - 2009 -<strong> Inuits.be</strong>
+          </div>
+          <div id="secondary-links">
+            <?php print theme('links', $secondary_links);?>
+          </div>
+
+      </div>    
     </div>
  
  <?php print $closure;?>

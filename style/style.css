@@ -114,7 +114,7 @@ ul {
  	border-left-style: solid;
 	border-left-width: 10px;
 	border-left-color: #336F70;
-	height: 360px;
+	height: 240px;
 }
 
 .bordermenu {
@@ -152,10 +152,12 @@ ul {
 	padding-bottom: 5px;
 	}
 
-#footer-border {
+.footer-border {
 	border-top: solid 2px #C6DACB;
 	border-bottom: solid 1px #C6DACB;
 	padding-bottom: 5px;
+	position:absolute;
+	bottom: 10px;
 	}
 	
 #secondary-links {

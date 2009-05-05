@@ -1,4 +1,4 @@
-<div id="block-<?php print $block->module .'-'. $block->delta; ?>" class="<?php print $classes; ?>">
+<div id="block-<?php print $block->module .'-'. $block->delta; ?>" class="block">
 
 <?php if ($block->subject): ?>
   <h3><?php print $block->subject ?></h3>
