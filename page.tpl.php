@@ -21,7 +21,12 @@
   <![endif]-->  
 </head>
 <body class="<?php print $body_classes;?>">
-<div class="container showgrid">
+<div class="container">
+    <div id="top" class="span-24 last">
+      <div id="primary-links">
+      <?php print theme('links',$primary_links);?>
+      </div>
+    </div>
     <div id="header" class="span-24 last">
       <div class="span-4">
       <br />
@@ -86,7 +91,6 @@
       print $help; // Drupal already wraps this one in a class      
 
       print $content;
-      print $feed_icons;
     ?>
       </div>
     </div>
@@ -95,5 +99,20 @@
       <?php print $right; ?>
     </div>
     </div>
+    <div class="clear"></div>
+        <div class="span-24 last">
+      <div id="footer-border">
+        <div id="copyright">
+          Copyright - 2009 -<strong> Inuits.be</strong>
+        </div>
+        <div id="secondary-links">
+          <?php print theme('links', $secondary_links);?>
+        </div>
+      </div>
+    </div>
+    </div>
+ 
+ <?php print $closure;?>
 
 </body>
+</html>

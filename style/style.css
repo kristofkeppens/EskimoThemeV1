@@ -26,8 +26,8 @@ ul {
 #nav li a{
 	width: 150px;
 	display: block;
-	height: 45px;
-	background: url(http://localhost/inuitstest/images/menu.jpg) no-repeat scroll 0 0;
+	height: 30px;
+	background: url(http://localhost/inuitsbeta/sites/all/themes/eskimo1/images/MENUinuits.png) no-repeat scroll 0 0;
 	text-indent: -9999px;
 	list-style:none;
 	}
@@ -39,60 +39,60 @@ ul {
 	}
 	
 #nav li a#vision {
-	background-position: 0 -45px;
+	background-position: 0 -30px;
 	}
 #nav li a#vision:active,
 #nav li a#vision:hover,
 #nav li a#vision:focus {
-	background-position: -150px -45px;
+	background-position: -150px -30px;
 }
 #nav li a#believers {
-	background-position: 0 -90px;
+	background-position: 0 -60px;
 	}
 #nav li a#believers:active,
 #nav li a#believers:hover,
 #nav li a#believers:focus {
-	background-position: -150px -90px;
+	background-position: -150px -60px;
 	}
 #nav li a#people {
-	background-position: 0 -135px;	
+	background-position: 0 -90px;	
 }
 #nav li a#people:active,
 #nav li a#people:hover,
 #nav li a#people:focus {
-	background-position: -150px -135px;
+	background-position: -150px -90px;
 	}
-#nav li a#people{
-	background-position: 0 -180px;
+#nav li a#jobs{
+	background-position: 0 -120px;
 	}
 #nav li a#jobs:active,
 #nav li a#jobs:hover,
 #nav li a#jobs:focus {
-	background-position: -150px -180px;
+	background-position: -150px -120px;
 	}
 #nav li a#contact {
-	background-position: 0 -225px;
+	background-position: 0 -150px;
 	}
 #nav li a#contact:active,
 #nav li a#contact:hover,
 #nav li a#contact:focus {
-	background-position: -150px -225px;
+	background-position: -150px -150px;
 	}
 #nav li a#planet {
-	background-position: 0 -270px;
+	background-position: 0 -180px;
 	}
 #nav li a#planet:active,
 #nav li a#planet:hover,
 #nav li a#planet:focus {
-	background-position: -150px -270px;
+	background-position: -150px -180px;
 	}
 #nav li a#benefits {
-	background-position: 0 -315px;
+	background-position: 0 -210px;
 	}
 #nav li a#benefits:active,
 #nav li a#benefits:hover,
 #nav li a#benefits:focus {
-	background-position: -150px -315px;
+	background-position: -150px -210px;
 	}
 
 #content {
@@ -114,6 +114,7 @@ ul {
  	border-left-style: solid;
 	border-left-width: 10px;
 	border-left-color: #336F70;
+	height: 360px;
 }
 
 .bordermenu {
@@ -125,3 +126,41 @@ ul {
 #content .border {
 	height: 360px;
 }
+
+.block {
+ 	border-width: 2px 8px 2px 2px ;
+ 	border-style: solid;
+ 	border-color: #C6DACB;
+ 	background-color: #EDFFCB;
+ 	padding: 6px 6px 6px 12px;
+ 	
+}
+
+#top {
+	border-bottom: solid 1px #C6DACB;
+	padding-top: 10px;
+	padding-bottom: 5px; 
+}
+
+#primary-links {
+	float: right;
+}
+
+#copyright {
+	float: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	}
+
+#footer-border {
+	border-top: solid 2px #C6DACB;
+	border-bottom: solid 1px #C6DACB;
+	padding-bottom: 5px;
+	}
+	
+#secondary-links {
+	text-align: right;
+	}
+	
+.clear { clear:both;}
+
