@@ -1,0 +1,18 @@
+name = eskimotheme_v1
+description = drupal eskimo theme for Inuits.be, 2 column layout, fixed links navigation
+core = 6.x
+engine = phptemplate
+
+region[head] = Head
+region[right] = Right
+region[content] = Content
+region[footer] = Footer
+
+features[] = favicon
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = search
+features[] = logo
+
+stylesheets[screen] = blueprint/screen.css
+stylesheets[print] = blueprint/print.css
