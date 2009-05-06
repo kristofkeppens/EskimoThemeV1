@@ -9,8 +9,9 @@
   <?php print $head; ?>
   <?php print $styles; ?>
   <?php print $scripts;?>
-  <link rel="stylesheet" href="/inuitsbeta/sites/all/themes/eskimo1/style/style.css" type="text/css" media="screen, projection">
   <link rel="stylesheet" href="/inuitsbeta/sites/all/themes/eskimo1/style/blueprint.css" type="text/css" media="screen, projection">
+  <link rel="stylesheet" href="/inuitsbeta/sites/all/themes/eskimo1/style/style.css" type="text/css" media="screen, projection">
+
   
   <!--[if lte IE 7]>
     <link rel="stylesheet" href="<?php print $path; ?>blueprint/ie.css" type="text/css" media="screen, projection">
@@ -31,10 +32,12 @@
       <div class="span-4">
       <br />
       </div>
-      <div class="span-19" id="logo">
+      
+      <div class="span-20 last" id="logo">
+      <div class="span-4" id="header-bottom-border"><br /></div>
         <div class="borderlogo">
           <h1 id="logo">
-            <a title="<?php print $site_name; ?><?php if ($site_slogan != '') print ' &ndash; '. $site_slogan; ?>" href="<?php print url(); ?>"><?php print $site_name; ?><?php if ($site_slogan != '') print ' &ndash; '. $site_slogan; ?></a>
+            
           </h1>          
         </div>      
       </div>
@@ -46,25 +49,25 @@
         <a id="news" href="/">news</a>
       </li>
       <li>
-        <a id="vision" href="/">vision</a>
+        <a id="vision" href="/content/vision">vision</a>
       </li>
       <li>
-        <a id="believers" href="/">believers</a>
+        <a id="believers" href="/content/believers">believers</a>
       </li>
       <li>
-        <a id="people" href="/">people</a>
+        <a id="people" href="/content/people">people</a>
       </li>
       <li>
-        <a id="jobs" href="/">jobs</a>
+        <a id="jobs" href="/content/jobs">jobs</a>
       </li>
       <li>
-        <a id="contact" href="/">contact</a>
+        <a id="contact" href="/content/contact">contact</a>
       </li>
       <li>
-        <a id="planet" href="/">planet</a>
+        <a id="planet" href="/aggregator/sources/1/">planet</a>
       </li>
       <li>
-        <a id="benefits" href="/">benefits</a>
+        <a id="benefits" href="/content/rolling-out-open-source-masses">benefits</a>
       </li>
     </ul>
     </div>
