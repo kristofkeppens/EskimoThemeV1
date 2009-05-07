@@ -22,7 +22,7 @@
   <![endif]-->  
 </head>
 <body class="<?php print $body_classes;?>">
-<div class="container">
+<div class="container showgrid">
     <div id="top" class="span-24 last">
       <div id="primary-links">
       <?php print theme('links',$primary_links);?>
