@@ -21,13 +21,20 @@
     <link href="<?php print $path; ?>css/ie6.css" rel="stylesheet"  type="text/css"  media="screen, projection" />
   <![endif]-->  
 </head>
-<body class="<?php print $body_classes;?>">
-<div class="container showgrid">
+<body id="body" class="<?php print $body_classes;?>">
+<div class="span-24 last" id="body-image">
+  <img src="/sites/all/themes/eskimo1/images/Pictures/inukshuk.png" alt="" />
+</div>
+<div class="container" id="top-container">
+  <div class="span-24 last">
     <div id="top" class="span-24 last">
       <div id="primary-links">
       <?php print theme('links',$primary_links);?>
       </div>
     </div>
+  </div>
+</div>
+<div class="container" id="main">
     <div id="header" class="span-24 last">
       <div class="span-4">
       <br />
@@ -89,7 +96,7 @@
       }
       
       if ($title != '') {
-        print '<h2>'. $title .'</h2>';
+        print '<h2 class="title">'. $title .'</h2>';
       }      
 
       print $help; // Drupal already wraps this one in a class      

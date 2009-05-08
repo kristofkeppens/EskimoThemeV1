@@ -100,6 +100,7 @@
 	padding-bottom: 18px;
 
 
+
 }
 
 .borderlogo {
@@ -111,16 +112,21 @@
 }
 
 .bordercontent {
-	margin-top: 30px;
+
 	padding-left: 30px;
  	border-left-style: solid;
 	border-left-width: 10px;
 	border-left-color: #336F70;
 	height: 240px;
+	margin-top: -1em;
+
 }
 
+.bordercontent .title {padding-top: 2em;}
+
 .bordermenu {
-	padding-top: 2.499em;
+
+	margin-top: 2.499em;
 	padding-left: 5px;
 	border-left: solid 1px #C6DACB;
 	
@@ -135,19 +141,21 @@
 	height: 360px;
 }
 
+.front #content .bordercontent {margin-top: 0em;}
+
 #content{
 	
 	}
 	
 .breadcrumb {
 	font-size:12px;
-	margin-top: 12px;
+	margin-top: 1em;
 	margin-bottom: 1em;
 	line-height: 18px;
 	}
 
 .block {
- 	border-width: 2px 8px 2px 2px ;
+ 	border-width: 0.166em 0.664em 0.166em 0.166em ;
  	border-style: solid;
  	border-color: #C6DACB;
  	padding: 1.7em 0.5em 0.5em 0.75em;
@@ -170,15 +178,13 @@
 
 #copyright {
 	float: left;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 0.415em;
+	padding-bottom: 0.415em;
 	}
 
 .footer-border {
 	border-top: solid 2px #C6DACB;
 	border-bottom: solid 1px #C6DACB;
-	padding-bottom: 5px;
-	position:relative;
 	}
 
 .feed-item {padding-top: 15px;}
@@ -187,15 +193,15 @@
 							  margin-bottom: 18px; 	}
 #aggregator .feed-item-meta {font-style: italic;
 				padding-top: 3px;
-				margin-bottom: 18px;
+				margin-bottom: 1em;
 				}
 .feed-item-body {font-size: 12px;
 				margin-top: 3px;
 				line-height: 18px;}
 				
-.feed-item-body p{margin-bottom: 18px;}
+.feed-item-body p{margin-bottom: 1em;}
 
-.feed-source {margin-bottom: 18px;}
+.feed-source {margin-bottom: 1em;}
 
 #secondary-links {
 	text-align: right;
@@ -205,7 +211,60 @@
 
 .bordercontent h2{}
 
-body {line-height: 18px;}
+#body {line-height: 18px;}
 
 .view-content{}
 .view-content img{margin-bottom: 0.5em;} 
+
+.container {	background: rgba(237,255,203, 0.3);}
+
+.container#main {
+			margin-top: 3em;
+			border-top: solid 1px #C6DACB;
+			border-bottom: solid 1px #C6DACB;
+}
+
+.container#top-container {margin-bottom: -1em;
+margin-top: 5em;
+border-top: solid 1px #C6DACB;}
+
+#body-image{
+	position: absolute;
+	width: 200%;
+	height: 200%;
+	top: -50%;
+	left: -50%;
+	z-index: -1;
+}
+
+#body-image[id] {
+	display: table;
+}
+
+#body-image div{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+}
+
+#body-image[id] div{
+	display: table-cell;
+	vertical-align: middle;
+	position: static;
+}
+
+*:first-child+html #body-image div {
+	position: absolute;
+}
+
+#body-image img {
+	position: relative;
+	/* Set the width dynamically depending on the width of the browser window */
+	width:auto;
+	/* dont enlarge the image more, than its initial resolution */
+	max-width:2904px;
+	max-height:1962px;
+	/* Set the height dynamically depending on the image's current width, keeping the aspect ratio */
+	height:100%;
+}

@@ -18,3 +18,5 @@ stylesheets[all][] = style/blueprint.css
 stylesheets[screen][] = style/style.css
 stylesheets[screen][] = blueprint/screen.css
 stylesheets[print][] = blueprint/print.css
+
+scripts[] = js/scaler.js
