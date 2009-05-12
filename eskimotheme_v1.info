@@ -13,6 +13,8 @@ regions[top_right] = Top Right
 regions[bottom_content_right] = Bottom Content Right
 regions[bottom_content_left] = Bottom Content Left
 regions[bottom] = Bottom
+regions[news] = News
+regions[customers] = Customers
 
 
 features[] = favicon

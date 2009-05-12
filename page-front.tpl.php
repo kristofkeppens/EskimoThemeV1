@@ -25,7 +25,7 @@
 <body id="body" class="<?php print $body_classes;?>">
 <!-- Set background image, full page rescalable with js -->
 
-  <img id="body-image" src="/sites/all/themes/eskimo1/images/Pictures/inukshuk.png" alt="" />
+  <!--<img id="body-image" src="/sites/all/themes/eskimo1/images/Pictures/inukshuk.png" alt="" />-->
 
 
 <!-- Start page layout, front page -->
@@ -35,6 +35,42 @@
   <div class="span-24 last">
     <div id="top" class="span-24 last">
     <img src="/sites/all/themes/eskimo1/images/inuitsopensource.png" alt="" />
+      <div class="span-4" id="nav-1">
+        <ul>
+          <li>
+            <a href="/">news</a>
+          </li>
+          <li>
+            <a href="/content/vision">vision</a>
+          </li>
+          <li>
+            <a href="/content/believers">believers</a>
+          </li>
+        </ul>
+      </div>
+      <div class="span-4" id="nav-2">
+        <ul>
+          <li>
+            <a href="/content/people">people</a>
+          </li>
+          <li>
+            <a href="/content/jobs">jobs</a>
+          </li>
+          <li>
+            <a href="/content/contact">contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="span-4" id="nav-3">
+        <ul>
+          <li>
+            <a href="/aggregator/sources/1/">planet</a>
+          </li>
+          <li>
+            <a href="/content/rolling-out-open-source-masses">benefits</a>
+          </li>
+        </ul>
+      </div>
       <div id="primary-links">
       <?php print theme('links',$primary_links);?>
       </div>
@@ -46,77 +82,50 @@
 <div class="container" id="main">
 
 <!-- Navigation, image based menu, links not in drupal !!! -->
-    <div class="span-4">
-     <div id="nav">
-    <ul>
-      <li>
-        <a id="news" href="/">news</a>
-      </li>
-      <li>
-        <a id="vision" href="/content/vision">vision</a>
-      </li>
-      <li>
-        <a id="believers" href="/content/believers">believers</a>
-      </li>
-      <li>
-        <a id="people" href="/content/people">people</a>
-      </li>
-      <li>
-        <a id="jobs" href="/content/jobs">jobs</a>
-      </li>
-      <li>
-        <a id="contact" href="/content/contact">contact</a>
-      </li>
-      <li>
-        <a id="planet" href="/aggregator/sources/1/">planet</a>
-      </li>
-      <li>
-        <a id="benefits" href="/content/rolling-out-open-source-masses">benefits</a>
-      </li>
-    </ul>
-    </div>
-    </div>
-    
-    <div class="span-8">
-      <div class="why whyborder">      
+    <div class="span-12">
+      <div class="why whyborder">
+        <?php if($top_left):?>      
         <?php print $top_left;?>
+        <?php endif;?>
       </div>
     </div>
-    <div class="span-6" id="who"><?php print $top_middle;?></div>
-    <div class="span-6 last" id="where"><?php print $top_right;?></div>
-
-    <div class="span-20 last" id="content-front">
-      <div id="inner-content">
-        <?php
-      if ($breadcrumb != '') {
-        print $breadcrumb;
-      }
-
-      if ($tabs != '') {
-        print '<div class="tabs">'. $tabs .'</div>';
-      }
-
-      if ($messages != '') {
-        print '<div id="messages">'. $messages .'</div>';
-      }
-      
-      if ($title != '') {
-        print '<h2 class="title">'. $title .'</h2>';
-      }      
-
-      print $help; // Drupal already wraps this one in a class      
-
-      print $content;
-    ?>
-    </div>  
+    <div class="span-6" id="who">
+      <?php if($top_middle):?>
+      <?php print $top_middle;?>
+      <?php endif;?>
     </div>
-    <div class="span-10" id="planet-inuits">
+    <div class="span-6 last" id="where">
+      <?php if($top_right):?>
+      <?php print $top_right;?>
+      <?php endif;?>  
+    </div>
+    <div class="span-16">
+      <?php if($news):?>
+      <?php print $news;?>
+      <?php endif;?>
+    </div>
+    <div class="span-8 last">
+      <?php if($customers):?>
+      <?php print $customers;?>
+      <?php endif;?>
+    </div>
+    <div class="span-12" id="planet-inuits">
       <div class="planet-inuits-border">
+        <?php if($bottom_content_left):?>
         <?php print $bottom_content_left;?>
+        <?php endif;?>
       </div>
     </div>
-    <div class="span-10 last" id="presentations"><?php print $bottom_content_right;?></div>
-    <div class="span-20 last" id="twitter"><?php print $bottom;?></div>
+    <div class="span-12 last" id="presentations">
+      <?php if($bottom_content_right):?>
+      <?php print $bottom_content_right;?>
+      <?php endif;?>
+    </div>
+    <div class="span-20 last" id="twitter">
+      <?php if($bottom):?>
+      <?php print $bottom;?>
+      <?php endif;?>
+    </div>
 
        
     </div>
@@ -127,7 +136,9 @@
             Copyright - 2009 -<strong> Inuits.be</strong>
           </div>
           <div id="secondary-links">
+            <?php if($secondary_links):?>
             <?php print theme('links', $secondary_links);?>
+            <?php endif;?>
           </div>
 
       </div>    

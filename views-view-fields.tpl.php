@@ -25,6 +25,5 @@
   <?php endif; ?>
   
  <?php print $field->content?>
- <?php var_dump($row)?>
 
 <?php endforeach; ?>
