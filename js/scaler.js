@@ -1,5 +1,3 @@
-document.onLoad = adjustRatio(document.getElementById('body-image').getElementsByTagName('img')[0]);
-
 if(document.ready){adjustRatio(document.getElementById('body-image').getElementsByTagName('img')[0]);}
 
 

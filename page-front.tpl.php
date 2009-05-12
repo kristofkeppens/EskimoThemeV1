@@ -21,11 +21,14 @@
     <link href="<?php print $path; ?>css/ie6.css" rel="stylesheet"  type="text/css"  media="screen, projection" />
   <![endif]-->  
 </head>
+
 <body id="body" class="<?php print $body_classes;?>">
+<!-- Set background image, full page rescalable with js -->
 
-<!-- Page background image -->
-<img id="body-image" src="/sites/all/themes/eskimo1/images/Pictures/inukshuk.png" alt="" />
+  <img id="body-image" src="/sites/all/themes/eskimo1/images/Pictures/inukshuk.png" alt="" />
 
+
+<!-- Start page layout, front page -->
 
 <!-- Header -->
 <div class="container" id="top-container">
@@ -40,8 +43,9 @@
 </div>
 
 <!-- Main content -->
-<div class="container showgrid" id="main">
-    
+<div class="container" id="main">
+
+<!-- Navigation, image based menu, links not in drupal !!! -->
     <div class="span-4">
      <div id="nav">
     <ul>
@@ -72,10 +76,17 @@
     </ul>
     </div>
     </div>
+    
+    <div class="span-8">
+      <div class="why whyborder">      
+        <?php print $top_left;?>
+      </div>
+    </div>
+    <div class="span-6" id="who"><?php print $top_middle;?></div>
+    <div class="span-6 last" id="where"><?php print $top_right;?></div>
 
-    <div class="span-14" id="content">
-      <div class="contentborder"></div>
-      <div class="bordercontent">
+    <div class="span-20 last" id="content-front">
+      <div id="inner-content">
         <?php
       if ($breadcrumb != '') {
         print $breadcrumb;
@@ -97,14 +108,15 @@
 
       print $content;
     ?>
+    </div>  
+    </div>
+    <div class="span-10" id="planet-inuits">
+      <div class="planet-inuits-border">
+        <?php print $bottom_content_left;?>
       </div>
     </div>
-    <div class="span-6 last ">
-    <div class="bordermenu">
-      <?php print $right; ?>
-    </div>
-    </div>
-    <div class="clear"></div>     
+    <div class="span-10 last" id="presentations"><?php print $bottom_content_right;?></div>
+    <div class="span-20 last" id="twitter"><?php print $bottom;?></div>
 
        
     </div>

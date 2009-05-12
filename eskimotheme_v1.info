@@ -3,10 +3,17 @@ description = drupal eskimo theme for Inuits.be, 2 column layout, fixed links na
 core = 6.x
 engine = phptemplate
 
-region[head] = Head
-region[right] = Right
-region[content] = Content
-region[footer] = Footer
+regions[head] = Head
+regions[right] = Right
+regions[content] = Content
+regions[footer] = Footer
+regions[top_left] = Top Left
+regions[top_middle] = Top middle
+regions[top_right] = Top Right
+regions[bottom_content_right] = Bottom Content Right
+regions[bottom_content_left] = Bottom Content Left
+regions[bottom] = Bottom
+
 
 features[] = favicon
 features[] = node_user_picture

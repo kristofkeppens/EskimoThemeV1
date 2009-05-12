@@ -1,29 +1,64 @@
+/*Stylesheet Inuits.be, in addition to the blueprint css files.
+	Fixed width layout, 24 grid system ( 30px + 10px margin )
+	Transparant background TODO : support older browsers !!!
+	Body background,auto rescaling full image TODO debug javascript !!!
+	TODO's 		images
+				logo
+				Clean up code
+	*/
+	
+	
+/* Layout */
+
+body {
+	line-height:18px;
+	}
+
 #header {
 	margin-top: 20px;
 	height: 150px;
-
-	}
-
+	}	
 #logo {
 	float:left;
 	height: 150px;
 	background: url(http://localhost/inuitsbeta/sites/all/themes/eskimo1/images/QuickHeaderInuitsSitev1.png) no-repeat;
-
+	}
+#planet-inuits {
+	padding-left: 160px;
+	}
+.why{
+	margin-top: 1.5em;
+	padding-left: 10px;
+	height: 240px;	
+	}
+#who{
+	margin-top: 1.5em;
+	height: 240px;
+	}
+#where{
+	margin-top: 1.5em;
+	height: 240px;
 }
+#twitter {
+	margin-left:160px;
+	}
+.more-link a{
+	padding-right: 5px;
+	}
+
+/* Navigation */
 
 #nav {
+	margin-top: 1.5em;
 	width: 150px;
 	list-style-type: none;
-}
-
+	}
 #nav ul {
 	list-style: none;
 	}
-
 #nav li {
 	list-style-image:none;
-	}
-	
+	}	
 #nav li a{
 	width: 150px;
 	display: block;
@@ -32,13 +67,11 @@
 	text-indent: -9999px;
 	list-style:none;
 	}
-
 #nav li a#news:active,
 #nav li a#news:hover,
 #nav li a#news:focus {
 	background-position: -150px 0;
-	}
-	
+	}	
 #nav li a#vision {
 	background-position: 0 -30px;
 	}
@@ -46,7 +79,7 @@
 #nav li a#vision:hover,
 #nav li a#vision:focus {
 	background-position: -150px -30px;
-}
+	}
 #nav li a#believers {
 	background-position: 0 -60px;
 	}
@@ -57,7 +90,7 @@
 	}
 #nav li a#people {
 	background-position: 0 -90px;	
-}
+	}
 #nav li a#people:active,
 #nav li a#people:hover,
 #nav li a#people:focus {
@@ -96,12 +129,19 @@
 	background-position: -150px -210px;
 	}
 
-#content {
-	padding-bottom: 18px;
+/* Typography */
 
+#body {line-height: 18px;}
 
+.bordercontent h2 {
+	margin-bottom: 1em;
+	}
 
-}
+/* Borders */
+
+/* Needs to be done like this due to the blueprint grid system 
+	place the borders within the grid div otherwise the width will
+	be incorrect and the div's will overflow */
 
 .borderlogo {
 	padding-left: 30px;
@@ -109,162 +149,170 @@
 	border-left-width: 10px;
 	border-left-color: #336F70;
 	height: 150px;
-}
-
-.bordercontent {
-
-	padding-left: 30px;
- 	border-left-style: solid;
-	border-left-width: 10px;
-	border-left-color: #336F70;
-	height: 240px;
-	margin-top: -1em;
-
-}
-
-.bordercontent .title {padding-top: 2em;}
-
-.bordermenu {
-
-	margin-top: 2.499em;
-	padding-left: 5px;
-	border-left: solid 1px #C6DACB;
-	
 	}
-	
+.whyborder {
+	border-left: solid 15px #336F70;
+	}
+.contentborder{
+	margin-top: 1.5em;
+	border-left: solid 15px #336F70;
+	height: 240px;
+	position: absolute;
+	z-index: 1;
+	}
+.bordercontent{
+	margin-top: 1.5em;
+	margin-left: 20px; 
+	}
+.content {
+	padding-left: 30px;
+	}
+.bordermenu {
+	margin-top: 1.5em;
+	padding-left: 5px;
+	border-left: solid 1px #C6DACB;	
+	}	
 #header-bottom-border {
 	height: 150px;
 	border-bottom: solid 10px #C6DACB;
 	}
-
-#content .border {
-	height: 360px;
-}
-
-.front #content .bordercontent {margin-top: 0em;}
-
-#content{
+.footer-border {
+	border-top: solid 2px #C6DACB;
+	border-bottom: solid 1px #C6DACB;
+	}	
+.container#main {
+	margin-top: 3em;
+	border-top: solid 1px #C6DACB;
+	border-bottom: solid 1px #C6DACB;
+	}
+.container#top-container {
+	margin-bottom: -1em;
+	margin-top: 5em;
+	border-top: solid 1px #C6DACB;
+	}
+.planet-inuits-border{
+	border-right: solid 1px #336F70;
+	padding-left:15px;
+	}	
 	
+/* Drupal primary and secondary links*/
+
+#secondary-links {
+	text-align: right;
+	}
+#primary-links {
+	float: right;
 	}
 	
-.breadcrumb {
-	font-size:12px;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	line-height: 18px;
-	}
+/* Drupal  sidebar block styling */
 
-.block {
+.bordermenu .block {
  	border-width: 0.166em 0.664em 0.166em 0.166em ;
  	border-style: solid;
  	border-color: #C6DACB;
  	padding: 1.7em 0.5em 0.5em 0.75em;
 	font-size: 0.8333em;
 	line-height: 1.8em;
- 	
-}
+	}
+.bordermenu .block h3 { margin-bottom: 1.333em;}
 
-.block h3 { margin-bottom: 1.333em;}
+/* Drupal breadcrumb styling*/ 
 
-#top {
-	border-bottom: solid 1px #C6DACB;
-	padding-top: 10px;
-	padding-bottom: 5px; 
-}
+.breadcrumb {
+	font-size:12px;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	line-height: 18px;
+	}
 
-#primary-links {
-	float: right;
-}
+/* Drupal content styling*/
+
+#content {
+	margin-bottom: 1em;
+	margin-bottom: 1.5em;
+	}
+#inner-content{
+	margin-top: 12px;
+	padding-right: 15px;
+	}
+.bordercontent .title {
+	padding-top: 0.5em;
+	}
+#content .border {
+	height: 360px;
+	}
+.front #content .bordercontent {
+	margin-top: 0em;
+	}
+#content-front{
+	margin-left: 175px;
+	}
+	
+/* Drupal aggregator styling */
+
+#aggregator .feed-item {
+
+	}
+#aggregator .feed-item-title {
+	font-size: 18px;
+	font-style: bold;
+	margin-bottom: 1em;
+	}
+#aggregator .feed-item-meta {
+	font-style: italic;
+	}
+.feed-item-body {
+	font-size: 12px;
+	margin-top: 1.5em;
+	line-height: 18px;
+	}				
+.feed-item-body p{
+	margin-bottom: 1.5em;
+	}
+.feed-source {
+	margin-bottom: 1.5em;
+	}
+
+/* Footer */
 
 #copyright {
 	float: left;
 	padding-top: 0.415em;
 	padding-bottom: 0.415em;
 	}
-
-.footer-border {
-	border-top: solid 2px #C6DACB;
+#top {
 	border-bottom: solid 1px #C6DACB;
+	padding-top: 10px;
+	padding-bottom: 5px; 
 	}
 
-.feed-item {padding-top: 15px;}
-#aggregator .feed-item-title {font-size: 18px;
-							  font-style: bold;
-							  margin-bottom: 18px; 	}
-#aggregator .feed-item-meta {font-style: italic;
-				padding-top: 3px;
-				margin-bottom: 1em;
-				}
-.feed-item-body {font-size: 12px;
-				margin-top: 3px;
-				line-height: 18px;}
-				
-.feed-item-body p{margin-bottom: 1em;}
+/* Views styling*/
 
-.feed-source {margin-bottom: 1em;}
-
-#secondary-links {
-	text-align: right;
+.view-content{
 	}
-	
-.clear { clear:both;}
+.view-content img{
+	margin-bottom: 0.5em;
+	} 
 
-.bordercontent h2{}
+/* Additional styling */
 
-#body {line-height: 18px;}
+.clear {
+	clear:both;
+	}
 
-.view-content{}
-.view-content img{margin-bottom: 0.5em;} 
+/* Body background */
 
-.container {	background: rgba(237,255,203, 0.3);}
-
-.container#main {
-			margin-top: 3em;
-			border-top: solid 1px #C6DACB;
-			border-bottom: solid 1px #C6DACB;
-}
-
-.container#top-container {margin-bottom: -1em;
-margin-top: 5em;
-border-top: solid 1px #C6DACB;}
-
-#body-image{
-	position: absolute;
-	width: 200%;
-	height: 200%;
-	top: -50%;
-	left: -50%;
-	z-index: -1;
-}
-
-#body-image[id] {
-	display: table;
-}
-
-#body-image div{
-	position: absolute;
-	left: 0;
-	top: 50%;
+#body-image {
 	width: 100%;
-}
-
-#body-image[id] div{
-	display: table-cell;
-	vertical-align: middle;
-	position: static;
-}
-
-*:first-child+html #body-image div {
 	position: absolute;
-}
+	top:0;
+	left:0;
+	z-index: -10;
+	}
 
-#body-image img {
-	position: relative;
-	/* Set the width dynamically depending on the width of the browser window */
-	width:auto;
-	/* dont enlarge the image more, than its initial resolution */
-	max-width:2904px;
-	max-height:1962px;
-	/* Set the height dynamically depending on the image's current width, keeping the aspect ratio */
-	height:100%;
-}
+
+/* Background colors */
+
+.container {
+	background: rgba(255,255,255, 0.5);
+	}
