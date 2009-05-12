@@ -109,6 +109,7 @@
       <?php print $customers;?>
       <?php endif;?>
     </div>
+    
     <div class="span-12" id="planet-inuits">
       <div class="planet-inuits-border">
         <?php if($bottom_content_left):?>
