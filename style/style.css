@@ -23,7 +23,7 @@ body {
 #logo {
 	float:left;
 	height: 150px;
-	background: url(http://localhost/inuitsbeta/sites/all/themes/eskimo1/images/QuickHeaderInuitsSitev1.png) no-repeat;
+	background: url(images/QuickHeaderInuitsSitev1.png) no-repeat;
 	}
 #planet-inuits {
 	
@@ -68,7 +68,7 @@ body {
 	width: 150px;
 	display: block;
 	height: 30px;
-	background: url(http://localhost/inuitsbeta/sites/all/themes/eskimo1/images/MENUinuits.png) no-repeat scroll 0 0;
+	background: url(images/MENUinuits.png) no-repeat scroll 0 0;
 	text-indent: -9999px;
 	list-style:none;
 	}
