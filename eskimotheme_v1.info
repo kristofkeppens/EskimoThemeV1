@@ -15,6 +15,10 @@ regions[bottom_content_left] = Bottom Content Left
 regions[bottom] = Bottom
 regions[news] = News
 regions[customers] = Customers
+regions[cloud] = Cloud
+regions[people] = People
+regions[explore] = Explore
+regions[info] = Info
 
 
 features[] = favicon

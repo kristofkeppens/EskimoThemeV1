@@ -9,8 +9,6 @@
   <?php print $head; ?>
   <?php print $styles; ?>
   <?php print $scripts;?>
-  <link rel="stylesheet" href="/inuitsbeta/sites/all/themes/eskimo1/style/blueprint.css" type="text/css" media="screen, projection">
-  <link rel="stylesheet" href="/inuitsbeta/sites/all/themes/eskimo1/style/style.css" type="text/css" media="screen, projection">
 
   
   <!--[if lte IE 7]>
@@ -25,16 +23,15 @@
 <body id="body" class="<?php print $body_classes;?>">
 <!-- Set background image, full page rescalable with js -->
 
-  <!--<img id="body-image" src="/sites/all/themes/eskimo1/images/Pictures/inukshuk.png" alt="" />-->
+  <!--<img id="body-image" src="<?php print $path;?>images/Pictures/inukshuk.png" alt="" />-->
 
 
 <!-- Start page layout, front page -->
-
 <!-- Header -->
 <div class="container" id="top-container">
   <div class="span-24 last">
     <div id="top" class="span-24 last">
-    <img src="/sites/all/themes/eskimo1/images/inuitsopensource.png" alt="" />
+    <img src="<?php print $path; ?>images/inuitsopensource.png" alt="" />
       <div class="span-4" id="nav-1">
         <ul>
           <li>
@@ -122,15 +119,40 @@
       <?php print $bottom_content_right;?>
       <?php endif;?>
     </div>
-    <div class="span-20 last" id="twitter">
+    <div class="span-6" id="twitter">
       <?php if($bottom):?>
       <?php print $bottom;?>
+      <?php endif;?>
+    </div>
+    <div class="span-18 last" id="cloud">
+      <?php if($cloud):?>
+      <?php print $cloud;?>
       <?php endif;?>
     </div>
 
        
     </div>
-    <div class="container">
+    <div id="full-width-footer-1">
+      <div class="container">
+          <div class="span-8" id="footer-links-people">
+            <?php if($people):?>
+            <?php print $people;?>
+            <?php endif;?>
+          </div>
+          <div class="span-8" id="footer-links-explore">
+            <?php if($explore):?>
+            <?php print $explore;?>
+            <?php endif;?>
+          </div>
+          <div class="span-8 last" id="footer-links-info">
+            <?php if($info):?>
+            <?php print $info;?>
+            <?php endif;?>
+          </div>
+      </div>
+    </div>
+    <div id="full-width-footer-2">
+    <div class="container" >
       <div class="span-24 footer-border last">
 
           <div id="copyright">
@@ -143,6 +165,7 @@
           </div>
 
       </div>    
+    </div>
     </div>
  
  <?php print $closure;?>

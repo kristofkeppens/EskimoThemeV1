@@ -31,7 +31,43 @@
 <div class="container" id="top-container">
   <div class="span-24 last">
     <div id="top" class="span-24 last">
-    <img src="/sites/all/themes/eskimo1/images/inuitsopensource.png" alt="" />
+    <img src="<?php print $path; ?>images/inuitsopensource.png" alt="" />
+      <div class="span-4" id="nav-1">
+        <ul>
+          <li>
+            <a href="/">news</a>
+          </li>
+          <li>
+            <a href="/content/vision">vision</a>
+          </li>
+          <li>
+            <a href="/content/believers">believers</a>
+          </li>
+        </ul>
+      </div>
+      <div class="span-4" id="nav-2">
+        <ul>
+          <li>
+            <a href="/content/people">people</a>
+          </li>
+          <li>
+            <a href="/content/jobs">jobs</a>
+          </li>
+          <li>
+            <a href="/content/contact">contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="span-4" id="nav-3">
+        <ul>
+          <li>
+            <a href="/aggregator/sources/1/">planet</a>
+          </li>
+          <li>
+            <a href="/content/rolling-out-open-source-masses">benefits</a>
+          </li>
+        </ul>
+      </div>
       <div id="primary-links">
       <?php print theme('links',$primary_links);?>
       </div>
@@ -42,38 +78,8 @@
 <!-- Main content -->
 <div class="container showgrid" id="main">
     
-    <div class="span-4">
-     <div id="nav">
-    <ul>
-      <li>
-        <a id="news" href="/">news</a>
-      </li>
-      <li>
-        <a id="vision" href="/content/vision">vision</a>
-      </li>
-      <li>
-        <a id="believers" href="/content/believers">believers</a>
-      </li>
-      <li>
-        <a id="people" href="/content/people">people</a>
-      </li>
-      <li>
-        <a id="jobs" href="/content/jobs">jobs</a>
-      </li>
-      <li>
-        <a id="contact" href="/content/contact">contact</a>
-      </li>
-      <li>
-        <a id="planet" href="/aggregator/sources/1/">planet</a>
-      </li>
-      <li>
-        <a id="benefits" href="/content/rolling-out-open-source-masses">benefits</a>
-      </li>
-    </ul>
-    </div>
-    </div>
 
-    <div class="span-14" id="content">
+    <div class="span-18" id="content">
       <div class="contentborder"></div>
       <div class="bordercontent">
         <?php

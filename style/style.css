@@ -16,6 +16,23 @@ body {
 #body{
 		background: rgb(250,255,237);
 	}
+#full-width-footer-1 {
+	background: rgba(0, 0, 0, 0.2);
+	}
+#full-width-footer-1 div.container {
+	margin: 0 auto;
+	}
+.container-footer{
+	margin: 0 auto;
+	width: 950px;
+
+	}
+#full-width-footer-2 {
+	background: rgba(0,0,0, 0.4);
+	}
+#full-width-footer-2 div.container {
+	margin: 0 auto;
+	}
 #header {
 	margin-top: 20px;
 	height: 150px;
@@ -31,24 +48,39 @@ body {
 .why{
 	margin-top: 1.5em;
 	padding-left: 10px;
-	height: 240px;	
+	height: 240px;
+	background: rgba(255,255,255, 0.5);	
 	}
 #who{
 	margin-top: 1.5em;
 	height: 240px;
+	background: rgba(255,255,255, 0.5);
 	}
 #where{
 	margin-top: 1.5em;
 	height: 240px;
+	background: rgba(255,255,255, 0.5);
 }
 #twitter {
+	background: rgba(255,255,255, 0.5);
 	}
 .more-link a{
 	padding-right: 5px;
 	}
 #block-views-Latestnews-block_1 {
-	margin-left: 15px;
 	margin-top: 1em;
+	}
+#block-block-4 {
+	margin-top: 1em;
+	}
+#footer-links-people {
+	margin-top: 1em;
+	}
+#footer-links-explore {
+	margin-top: 1em;
+	}
+#footer-links-info {
+	margin-top:1em;
 	}
 
 /* Navigation */
@@ -204,8 +236,7 @@ body {
 	border-bottom: solid 10px #C6DACB;
 	}
 .footer-border {
-	border-top: solid 2px #C6DACB;
-	border-bottom: solid 1px #C6DACB;
+	border-bottom: solid 2px #C6DACB;
 	}	
 .container#main {
 	margin-top: 3em;
@@ -219,12 +250,12 @@ body {
 	}
 .planet-inuits-border{
 	border-right: solid 1px #336F70;
-	padding-left:15px;
 	}	
 	
 /* Drupal primary and secondary links*/
 
 #secondary-links {
+	padding-top: 10px;
 	text-align: right;
 	}
 #primary-links {
@@ -311,6 +342,7 @@ body {
 	border-bottom: solid 1px #C6DACB;
 	padding-top: 10px;
 	padding-bottom: 5px; 
+	background: rgba(255,255,255, 0.5);
 	}
 
 /* Views styling*/
@@ -340,6 +372,10 @@ body {
 
 /* Background colors */
 
-.container {
+.block {
 	background: rgba(255,255,255, 0.5);
+}
+
+.container {
+	/*background: rgba(255,255,255, 0.5);*/
 	}
