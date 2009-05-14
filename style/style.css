@@ -68,11 +68,75 @@ body {
 	padding-top:1em;
 	color: white;
 	}
+.feed-item {
+	background-color: rgba(255,255,255, 0.2);
+	margin-top: 1em;
+	padding-left:10px;
+	padding-right: 5px;
+	padding-bottom: 1em;
+	}
+.feed-item-title {
+	padding-left: 15px;
+	padding-top: 1em;
+	}
+.feed-item-title a:link {
+	color: white;
+	}
+.feed-item-title a:hover {
+	color: rgb(71,66,60);
+	}
+.feed-item-title a:clicked
+{
+	color:white;
+	}
+ 
+.feed-item-title a:active
+{
+	color:white;
+	}
+
+.feed-item h3 a:visited {
+	color:rgb(80,74,64);
+	}
+.feed-item-body {
+	background-color: rgba(255,255,255, 0.7);
+	margin-bottom:1em;
+	margin-top: 1em;
+	padding-left: 10px;
+	padding-right: 5px;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	}
 .content {
 	background-color: rgba(255,255,255, 0.7);
 	margin-bottom: 1em;
 	margin-top: 1em;
-	
+	}
+#contact-mail-page {
+	background-color: rgba(255,255,255, 0.7);
+	margin-bottom: 1em;
+	margin-top: 1em;
+	padding: 1em 1em 1em 1em;
+}
+.title {
+	color: white;
+	}
+#content {
+	margin-top: 1em;
+}
+div.node {
+	background-color: rgba(255,255,255,0.2);
+	padding-left: 10px;
+	padding-right:5px;
+	margin-top: 1em;
+	}
+.node h2 {
+	padding-left: 15px;
+	padding-top: 1em;
+	color: white;
+	}
+#content {
+	background-color: rgba(255,255,255,0.2);
 	}
 #block-views-Inuitweets-block_1 {
 	padding-top: 1em;
@@ -340,7 +404,7 @@ a:hover, a:active {
 	}
 .bordercontent{
 	margin-top: 1.5em;
-	margin-left: 20px; 
+	margin-left: 10px; 
 	}
 .content {
 	padding-left: 30px;
@@ -400,6 +464,7 @@ a:hover, a:active {
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
 	line-height: 18px;
+	color:white;
 	}
 
 /* Drupal content styling*/

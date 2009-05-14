@@ -34,34 +34,31 @@
       <div class="span-4" id="nav-1">
         <ul>
           <li>
-            <a href="/">news</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="/content/vision">vision</a>
+            <a href="/blog">News</a>
           </li>
           <li>
-            <a href="/content/believers">believers</a>
+            <a href="/content/vision">Vision</a>
           </li>
         </ul>
       </div>
       <div class="span-4" id="nav-2">
         <ul>
           <li>
-            <a href="/content/people">people</a>
+            <a href="/content/believers">Believers</a>
           </li>
           <li>
-            <a href="/content/jobs">jobs</a>
+            <a href="/content/people">People</a>
           </li>
           <li>
-            <a href="/content/contact">contact</a>
+            <a href="/content/jobs">Jobs</a>
           </li>
         </ul>
       </div>
       <div class="span-4" id="nav-3">
         <ul>
-          <li>
-            <a href="/aggregator/sources/1/">planet</a>
-          </li>
           <li>
             <a href="/content/rolling-out-open-source-masses">benefits</a>
           </li>

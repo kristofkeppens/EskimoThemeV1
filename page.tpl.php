@@ -23,46 +23,38 @@
 </head>
 <body id="body" class="<?php print $body_classes;?>">
 
-<!-- Page background image -->
-<img id="body-image" src="/sites/all/themes/eskimo1/images/Pictures/inukshuk.png" alt="" />
-
-
 <!-- Header -->
 <div class="container" id="top-container">
-  <div class="span-24 last">
-    <div id="top" class="span-24 last">
-    <img src="<?php print $path; ?>images/inuitsopensource.png" alt="" />
+  <div class="span-24 last" id="top">
+    <img src="<?php print $path; ?>images/inuitsopensource.png" alt="" width=350px />
       <div class="span-4" id="nav-1">
         <ul>
           <li>
-            <a href="/">news</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="/content/vision">vision</a>
+            <a href="/blog">News</a>
           </li>
           <li>
-            <a href="/content/believers">believers</a>
+            <a href="/content/vision">Vision</a>
           </li>
         </ul>
       </div>
       <div class="span-4" id="nav-2">
         <ul>
           <li>
-            <a href="/content/people">people</a>
+            <a href="/content/believers">Believers</a>
           </li>
           <li>
-            <a href="/content/jobs">jobs</a>
+            <a href="/content/people">People</a>
           </li>
           <li>
-            <a href="/content/contact">contact</a>
+            <a href="/content/jobs">Jobs</a>
           </li>
         </ul>
       </div>
       <div class="span-4" id="nav-3">
         <ul>
-          <li>
-            <a href="/aggregator/sources/1/">planet</a>
-          </li>
           <li>
             <a href="/content/rolling-out-open-source-masses">benefits</a>
           </li>
@@ -72,15 +64,14 @@
       <?php print theme('links',$primary_links);?>
       </div>
     </div>
-  </div>
+
 </div>
 
 <!-- Main content -->
-<div class="container showgrid" id="main">
+<div class="container" id="main">
     
 
     <div class="span-18" id="content">
-      <div class="contentborder"></div>
       <div class="bordercontent">
         <?php
       if ($breadcrumb != '') {
@@ -106,25 +97,46 @@
       </div>
     </div>
     <div class="span-6 last ">
-    <div class="bordermenu">
       <?php print $right; ?>
-    </div>
     </div>
     <div class="clear"></div>     
 
        
     </div>
-    <div class="container">
+    <div id="full-width-footer-1">
+      <div class="container" id="footer-links">
+          <div class="span-8" id="footer-links-people">
+            <?php if($people):?>
+            <?php print $people;?>
+            <?php endif;?>
+          </div>
+          <div class="span-8" id="footer-links-explore">
+            <?php if($explore):?>
+            <?php print $explore;?>
+            <?php endif;?>
+          </div>
+          <div class="span-8 last" id="footer-links-info">
+            <?php if($info):?>
+            <?php print $info;?>
+            <?php endif;?>
+          </div>
+      </div>
+    </div>
+    <div id="full-width-footer-2">
+    <div class="container" >
       <div class="span-24 footer-border last">
 
           <div id="copyright">
             Copyright - 2009 -<strong> Inuits.be</strong>
           </div>
           <div id="secondary-links">
+            <?php if($secondary_links):?>
             <?php print theme('links', $secondary_links);?>
+            <?php endif;?>
           </div>
 
       </div>    
+    </div>
     </div>
  
  <?php print $closure;?>
