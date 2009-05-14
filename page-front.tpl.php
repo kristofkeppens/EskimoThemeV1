@@ -29,9 +29,8 @@
 <!-- Start page layout, front page -->
 <!-- Header -->
 <div class="container" id="top-container">
-  <div class="span-24 last">
-    <div id="top" class="span-24 last">
-    <img src="<?php print $path; ?>images/inuitsopensource.png" alt="" />
+  <div class="span-24 last" id="top">
+    <img src="<?php print $path; ?>images/inuitsopensource.png" alt="" width=350px />
       <div class="span-4" id="nav-1">
         <ul>
           <li>
@@ -72,24 +71,19 @@
       <?php print theme('links',$primary_links);?>
       </div>
     </div>
-  </div>
+
 </div>
 
 <!-- Main content -->
 <div class="container" id="main">
 
 <!-- Navigation, image based menu, links not in drupal !!! -->
-    <div class="span-12">
+    <div class="span-18">
       <div class="why whyborder">
         <?php if($top_left):?>      
         <?php print $top_left;?>
         <?php endif;?>
       </div>
-    </div>
-    <div class="span-6" id="who">
-      <?php if($top_middle):?>
-      <?php print $top_middle;?>
-      <?php endif;?>
     </div>
     <div class="span-6 last" id="where">
       <?php if($top_right):?>
