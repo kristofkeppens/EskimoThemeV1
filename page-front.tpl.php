@@ -107,8 +107,8 @@
       <?php endif;?>
     </div>
     
-    <div class="span-12" id="planet-inuits">
-      <div class="planet-inuits-border">
+    <div class="span-12">
+      <div id="planet-inuits">
         <?php if($bottom_content_left):?>
         <?php print $bottom_content_left;?>
         <?php endif;?>
@@ -133,7 +133,7 @@
        
     </div>
     <div id="full-width-footer-1">
-      <div class="container">
+      <div class="container" id="footer-links">
           <div class="span-8" id="footer-links-people">
             <?php if($people):?>
             <?php print $people;?>
