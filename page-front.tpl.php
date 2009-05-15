@@ -97,7 +97,6 @@
       <?php print $customers;?>
       <?php endif;?>
     </div>
-    
     <div class="span-12">
       <div id="planet-inuits">
         <?php if($bottom_content_left):?>
