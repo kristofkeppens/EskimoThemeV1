@@ -6,7 +6,7 @@
  * flush the theme cache when you load the page. That way it will
  * always look for new tpl files.
  */
-// drupal_flush_all_caches();
+drupal_flush_all_caches();
 
 /**
  * Intercept page template variables
