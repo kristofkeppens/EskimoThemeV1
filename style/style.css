@@ -99,7 +99,7 @@
 	}
 	.container#top-container {
 		margin-bottom: -1em;
-		margin-top: 5em;
+		margin-top: 2em;
 		border-top: solid 1px #C6DACB;
 	}
 	
@@ -227,6 +227,14 @@
 		padding-left: 15px;
 		padding-top:1em;
 		color: white;
+	}
+	#block-views-Latestnews-block_1 .content{
+		display:none;
+	}
+	#block-views-Tweeter-block_1 {
+		background-image: url(../images/Tweeterbird.png);
+		background-repeat: no-repeat;
+		background-position: -10px 10px;
 	}
 
 

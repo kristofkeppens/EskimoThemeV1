@@ -87,17 +87,17 @@
       <?php print $top_right;?>
       <?php endif;?>  
     </div>
-    <div class="span-16">
+    <div class="span-24 last">
       <?php if($news):?>
       <?php print $news;?>
       <?php endif;?>
-    </div>
+    </div><!--
     <div class="span-8 last">
       <?php if($customers):?>
       <?php print $customers;?>
       <?php endif;?>
     </div>
-    <div class="span-12">
+    --><div class="span-12">
       <div id="planet-inuits">
         <?php if($bottom_content_left):?>
         <?php print $bottom_content_left;?>
